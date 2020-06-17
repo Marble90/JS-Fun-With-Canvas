@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="fun.css">
+
+    <title>Fun With Canvas</title>
+</head>
+<body>
+    <div class="navbar">
+        <a href="#home">Home</a>
+        <a href="#news">News</a>
+        <a href="#contact">Contact</a>
+        <a href="#css">CSS</a>
+        <a href="#js">JS</a>
+        <a href="#html">HTML</a>
+
+    </div>
+
+<div class = "container">
+    <div class = "row">
+        <div  class="col-md-4 my-5 text-center" style="background-color:lavender;">
+            <h2>Categories</h2>  
+            <div class = "card">
+                <div class = "card-header">
+                    <h6 class="text-capitalize my-1"><span class="badge badge-success mr-1">Category :</span>
+                        <span id="category"></span></h6>
+                </div>
+            </div>      
+        </div>
+
+        <div  class="col-md-8 my-5 text-center" style="background-color:pink;">
+            <div class = "set">
+            <h4>Spend couple of minutes to win a prize!</h4>
+            <div class="btn-group btn-group-sm">
+               <button type="button" id = "btnClear" class="btn btn-light">Clear</button>
+               <button type="button" id = "btnSave" class="btn btn-outline-info">Save</button>
+            </div>
+            </div>
+            <div class = "setup">
+                <label for="input1" class="col-sm-2 col-form-label">FullName:</label>
+                <div class="col-sm-5">
+                  <input type="text" class="form-control col-md-10" id="inputName" placeholder="FullName">
+                </div>
+                <label for="input2" class="col-sm-2 col-form-label">Age:</label>
+                <select type="text" class="form-control col-md-3" id="inputAge" placeholder="category">
+                    <option> </option>
+                    <option>4-7</option>
+                    <option>8-12</option>
+                    <option>12-16</option>
+                    <option>16-18</option>
+                    </select>
+            </div>
+            <canvas id = "myCanvas" width="600" height="400" style="background-color: white;"></canvas>
+        </div>
+        
+    </div>
+</div>
+
+        <script src = "fun.js"></script>
+</body>
+</html>
